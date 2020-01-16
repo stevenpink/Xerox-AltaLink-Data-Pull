@@ -27,6 +27,8 @@ for printer in printers:
 
     datatable = tableDataText(soup1.find("table", {"class" : "tableDiv"}))
 
+    # here we are getting the total impressions and each type of duplex impression count
+    # you can alter or add to the items in quotes to get different pieces of data
     for item in datatable:
         if item[0] == "Total Impressions":
             totalimpressions = item[1]
